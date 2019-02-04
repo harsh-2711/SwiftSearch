@@ -20,7 +20,7 @@ The library provides very high performance results i.e. it provides response to 
 
 #### Dynamic Framework (Simplest way)
 
-* Download the latest release of [SwiftElasticSearch](https://github.com/harsh-2711/SwiftSearch/archive/v0.1.0.zip) from Github and extract the zip 
+* Download the latest release of [SwiftSearch](https://github.com/harsh-2711/SwiftSearch/archive/v0.1.0.zip) from Github and extract the zip 
 
 * Navigate to your Xcode's project `General` settings (Click on the the blue icon showing your project's workspace -> General)
 
