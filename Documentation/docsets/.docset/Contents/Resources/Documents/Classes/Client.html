@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Client Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Client" class="dashAnchor"></a>
+    <a title="Client Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Client Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Client.html">Client</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Errors.html">Errors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Request.html">Request</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Response.html">Response</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:18SwiftElasticSearch03getC10StreamData3url11credentials3app4type4body7headers17completionHandlerySS_SSSgSSAJSDySSypGSDyS2SGSgyypSgctF">getSearchStreamData(url:credentials:app:type:body:headers:completionHandler:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:18SwiftElasticSearch13getStreamData3url11credentials3app4type2id7headers17completionHandlerySS_SSSgS3SSDyS2SGSgyypSgctF">getStreamData(url:credentials:app:type:id:headers:completionHandler:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:18SwiftElasticSearch9stringify4json13prettyPrintedSSyp_SbtF">stringify(json:prettyPrinted:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Client</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Client</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Entry point in the SwiftElasticSearch library</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC3urlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC3urlSSvp">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>URL of the ElasticSearch host server (If application is hosted on appbase.io, url should be <a href="https://scalr.api.appbase.io">https://scalr.api.appbase.io</a>)</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC3appSSvp"></a>
+                    <a name="//apple_ref/swift/Property/app" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC3appSSvp">app</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Name of the app (aka search index)</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">app</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC11credentialsSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/credentials" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC11credentialsSSSgvp">credentials</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Basic Auth <code>username:password</code> formatted credentials for authentication (if any)</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">credentials</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializer"></a>
+                <a name="//apple_ref/swift/Section/Initializer" class="dashAnchor"></a>
+                <a href="#/Initializer">
+                  <h3 class="section-name">Initializer</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC3url3app11credentialsACSSSg_SSAGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(url:app:credentials:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC3url3app11credentialsACSSSg_SSAGtcfc">init(url:app:credentials:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Instantiates an ElasticSearch client object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"https://scalr.api.appbase.io"</span><span class="p">,</span> <span class="nv">app</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">credentials</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL of the ElasticSearch host server (If application is hosted on appbase.io, url should be <a href="https://scalr.api.appbase.io">https://scalr.api.appbase.io</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>app</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the app (aka search index)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credentials</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Basic Auth <code>username:password</code> formatted credentials for authentication (if any)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>SwiftElasticSearch class Object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Operations"></a>
+                <a name="//apple_ref/swift/Section/Operations" class="dashAnchor"></a>
+                <a href="#/Operations">
+                  <h3 class="section-name">Operations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC5index4type2id4body7headers17completionHandlerySSSg_AJSDySSypGSDyS2SGSgyypSg_AnJtctF"></a>
+                    <a name="//apple_ref/swift/Method/index(type:id:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC5index4type2id4body7headers17completionHandlerySSSg_AJSDySSypGSDyS2SGSgyypSg_AnJtctF">index(type:id:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a JSON document to the search index (via POST/PUT request)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"_doc"</span><span class="p">,</span> <span class="nv">id</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">body</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the doc to be indexed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the doc to be indexed (defaults to <code>_doc</code> when not passed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>JSON document to be indexed. It must be in a valid JSON format. For more information, read <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.5/docs-index_.html">here</a> Eg :</p>
+<pre class="highlight swift"><code>            <span class="k">let</span> <span class="nv">updateParameters</span><span class="p">:[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s">"year"</span><span class="p">:</span> <span class="mi">2018</span><span class="p">,</span>
+                 <span class="s">"movieName"</span><span class="p">:</span> <span class="s">"La La Land"</span>
+        <span class="p">]</span>
+</code></pre>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the <code>index()</code> request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC3get4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSg_AlItctF"></a>
+                    <a name="//apple_ref/swift/Method/get(type:id:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC3get4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSg_AlItctF">get(type:id:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches a specified document from the search index (GET request)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"_doc"</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the doc to be fetched</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the doc to be fetched (defaults to <code>_doc</code> when not passed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC6delete4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSg_AlItctF"></a>
+                    <a name="//apple_ref/swift/Method/delete(type:id:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC6delete4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSg_AlItctF">delete(type:id:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes a specified document from the search index (DELETE request)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"_doc"</span><span class="p">,</span> <span class="nv">id</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the doc to be deleted</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the doc to be deleted (defaults to <code>_doc</code> when not passed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC6update4type2id4body7headers17completionHandlerySSSg_SSSDySSypGSDyS2SGSgyypSg_AnJtctF"></a>
+                    <a name="//apple_ref/swift/Method/update(type:id:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC6update4type2id4body7headers17completionHandlerySSSg_SSSDySSypGSDyS2SGSgyypSg_AnJtctF">update(type:id:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Partially update a specified document in the search index. (POST request)
+It&rsquo;s different from the index() method as it allows to only update the fields specified in the <code>body.doc</code> key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"_doc"</span><span class="p">,</span> <span class="nv">id</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">body</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the doc to be updated</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the doc to be updated (defaults to <code>_doc</code> when not passed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Fields to be updated passed under the <code>doc</code> key. The data must be in valid JSON format. Eg :</p>
+<pre class="highlight swift"><code>    <span class="k">let</span> <span class="nv">updateParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"doc"</span><span class="p">:</span> <span class="p">[</span><span class="s">"year"</span><span class="p">:</span> <span class="mi">2018</span><span class="p">]]</span>
+</code></pre>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.
+While updating, all the JSON body needs to be put inside a doc array as shown above else the method won&rsquo;t work. For more information, read <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html#_updates_with_a_partial_document">here</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC4bulk4type4body7headers17completionHandlerySSSg_SaySDySSypGGSDyS2SGSgyypSg_AnItctF"></a>
+                    <a name="//apple_ref/swift/Method/bulk(type:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC4bulk4type4body7headers17completionHandlerySSSg_SaySDySSypGGSDyS2SGSgyypSg_AnItctF">bulk(type:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Make bulk requests on the search index. Bulk requests can be any of index, update and delete requests.</p>
+
+<p>For more information, read <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html">here</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">bulk</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">body</span> <span class="p">:</span> <span class="p">[[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the documents passed in the bulk request (can also be passed as part of request body)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>JSON data in the specified format. Note: For updating data, the JSON must be of the format [[String:Any]]. A quick example of bulk request is shown here:</p>
+<pre class="highlight swift"><code>    <span class="k">let</span> <span class="nv">bulkParameters</span><span class="p">:[[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">[</span> <span class="s">"index"</span><span class="p">:</span> <span class="p">[</span> <span class="s">"_type"</span><span class="p">:</span> <span class="s">"SwiftClientES"</span><span class="p">]</span> <span class="p">],</span>
+            <span class="p">[</span><span class="s">"Title"</span> <span class="p">:</span> <span class="s">"New Movie 4"</span> <span class="p">,</span> <span class="s">"Year"</span> <span class="p">:</span> <span class="s">"2016"</span><span class="p">],</span>
+            <span class="p">[</span> <span class="s">"delete"</span> <span class="p">:</span> <span class="p">[</span><span class="s">"_id"</span><span class="p">:</span> <span class="s">"testID"</span><span class="p">]]</span>
+    <span class="p">]</span>
+</code></pre>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC6search4type4body7headers17completionHandlerySSSg_SDySSypGSDyS2SGSgyypSg_AmItctF"></a>
+                    <a name="//apple_ref/swift/Method/search(type:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC6search4type4body7headers17completionHandlerySSSg_SDySSypGSDyS2SGSgyypSg_AmItctF">search(type:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search across documents in the index. The request body is constructed using the Query DSL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">body</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the documents to be searched against (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search Query DSL specified in the JSON format.
+More information on how to specify an ElasticSearch query can be found <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">here</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC7msearch4type4body7headers17completionHandlerySSSg_SaySDySSypGGSDyS2SGSgyypSg_AnItctF"></a>
+                    <a name="//apple_ref/swift/Method/msearch(type:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC7msearch4type4body7headers17completionHandlerySSSg_SaySDySSypGGSDyS2SGSgyypSg_AnItctF">msearch(type:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combine multiple search requests into a single request. The individual request bodies are constructed using the Query DSL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">msearch</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span> <span class="p">,</span> <span class="nv">body</span> <span class="p">:</span> <span class="p">[[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the documents to be searched against (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Multiple queries passed in JSON format, each adhering to the Search Query DSL [query1(json),query2(json)]. 
+More information on multi search API can be found <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-multi-search.html">here</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC9getStream4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSgctF"></a>
+                    <a name="//apple_ref/swift/Method/getStream(type:id:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC9getStream4type2id7headers17completionHandlerySSSg_SSSDyS2SGSgyypSgctF">getStream(type:id:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get streaming updates to a document with a specified id. The [stream = true] parameter informs the appbase.io service to keep the connection open, which is used to receive subsequent updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getStream</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"_doc"</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the doc to be fetched</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the doc to be fetched (defaults to <code>_doc</code> when not passed)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Streamed updates as message, each update in a JSON format until the connection is closed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC12searchStream4type4body7headers17completionHandlerySSSg_SDySSypGSDyS2SGSgyypSgctF"></a>
+                    <a name="//apple_ref/swift/Method/searchStream(type:body:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC12searchStream4type4body7headers17completionHandlerySSSg_SDySSypGSDyS2SGSgyypSgctF">searchStream(type:body:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get streaming updates to a search query provided in the request body. The [stream=true] parameter informs the appbase.io service to keep the connection open, which is used to receive subsequent updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchStream</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">body</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the documents to be searched against (optional)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>body</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search Query DSL specified in the JSON format</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Streamed updates as message, each update in a JSON format until the connection is closed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftElasticSearch6ClientC10getMapping4type7headers17completionHandlerySSSg_SDyS2SGSgyypSg_AkHtctF"></a>
+                    <a name="//apple_ref/swift/Method/getMapping(type:headers:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftElasticSearch6ClientC10getMapping4type7headers17completionHandlerySSSg_SDyS2SGSgyypSg_AkHtctF">getMapping(type:headers:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the data mapping for the search index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMapping</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span> <span class="p">,</span> <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional) If provided, the mapping will be returned for only this particular type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional headers to be passed along with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p></p>
+
+<ul>
+<li><code>data</code>: The data returned by the server</li>
+<li><code>response</code>: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an HTTPURLResponse object.</li>
+<li><code>error</code>: An error object that indicates why the request failed, or nil if the request was successful.</li>
+</ul>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
