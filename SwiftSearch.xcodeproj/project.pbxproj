@@ -108,6 +108,7 @@
 		D9878C87220850BE0086EACA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		D9878C8B220850E70086EACA /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
 		D9878C922208534F0086EACA /* SwiftWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftWebSocket.xcodeproj; path = Carthage/Checkouts/SwiftWebSocket/SwiftWebSocket.xcodeproj; sourceTree = "<group>"; };
+		D9878CA7220856000086EACA /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 		D982D5A92207814500F772F3 = {
 			isa = PBXGroup;
 			children = (
+				D9878CA7220856000086EACA /* Package.swift */,
 				D9878C922208534F0086EACA /* SwiftWebSocket.xcodeproj */,
 				D982D5CB220781BA00F772F3 /* Sources */,
 				D982D5D6220784FF00F772F3 /* SwiftSearch iOSTests */,
